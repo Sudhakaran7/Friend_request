@@ -1,0 +1,55 @@
+Allen given a work that, he'll be given with some set of ages of persons, 
+That people will make friend requests with each others
+Person x will NOT friend request person y (y != x) 
+if any of the following condition satisified,
+age[y] <= 0.5 * age[x] + 7
+age[y] > age[x]
+age[y] > 100 && age[x] < 100
+If any of the given condition is not satisfied then they'll make friend request.
+Constraint :Note that if x requests y, y does not necessarily request x.  Also, people will not friend request themselves.
+Return how many total friend request can be made.
+
+Input Description:
+ages of people in a array in integers
+
+Output Description:
+how many total friend request can be made.
+
+Sample Input:
+20 30 101 111 120
+
+Sample Output:
+3
+
+Explanation:
+111 can give to 101, 120 can give to 111, 120 can give to 101
+
+Sample Input:
+44 51 36 78 79 22
+
+Sample Output:
+6
+
+Sample Input:
+89 56 111 101 65
+
+Sample Output:
+8
+
+Sample Input:
+29 33 56 18 65 33
+
+Sample Output:
+5
+
+Sample Input:
+98 67 9 56 72 86
+
+Sample Output:
+9
+
+Sample Input:
+38 45 51 57 78 99 101
+
+Sample Output:
+12
